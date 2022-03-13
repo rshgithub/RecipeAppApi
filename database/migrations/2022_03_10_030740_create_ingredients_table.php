@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignIdFor(Dish::class)->nullable();
             $table->string('ingredient');
             $table->integer('unit');
-            $table->enum('unit', ['g', 'kg', 'cl', 'L', 'lbs', 'tsp', 'tbs', 'gill', 'cup']);
+            $table->enum('measure', ['g', 'kg', 'cl', 'L', 'lbs', 'tsp', 'tbs', 'gill', 'cup']);
             $table->timestamps();
         });
     }
